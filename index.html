@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="veebayy Content Creator Script Created by mstfoztrk">
+    <meta name="author" content="Mustafa Öztürk">
+    <link rel="icon" href="assets/imgs/favicon.png">
+    <title>Documentation veebayy - Support Creators Content Script</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/prism.css" rel="stylesheet">
+    <link href="assets/css/prism-line-highlight.css" rel="stylesheet">
+    <style type="text/css">
+        .col-1 pre {
+            font-weight:400;
+            font-size:13px;
+            padding:15px;
+            background-color: #272822;
+            border-radius:10px;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            color:#ffffff;overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="veebayy_document_bg"></div>
+    <div class="veebayy_document_main flex_ tabing_non_justify column">
+        <div class="veebayy_document_container">
+           <h1>setting and set up of admin panel details</h1>
+            <!--DOCUMENTATION-->
+            <div class="document column flex_ tabing border_one">
+               
+                    <!--LIST CONTENT-->
+                <div class="column-title">Table of Contents</div>
+                <div class="col-1 col-plus" id="tableContent">
+                    <li class="tab border_three transition"><a href="#Settings" class="scroll-element">Setting MySQL</a></li>
+                    <li class="tab border_three transition"><a href="#Uploading" class="scroll-element">Uploading Files</a></li>
+                    <li class="tab border_three transition"><a href="#Requirements" class="scroll-element">Requirements</a></li>
+                    <li class="tab border_three transition"><a href="#Installation" class="scroll-element">Installation</a></li>
+                    <li class="tab border_three transition"><a href="#AccessAdmin" class="scroll-element">Access to Admin Panel</a></li>
+                    <li class="tab border_three transition"><a href="#SocialLogin" class="scroll-element">Social Login</a></li>
+                    <li class="tab border_three transition"><a href="#oneSignalInstallation" class="scroll-element">OneSignal Installation</li>
+                    <li class="tab border_three transition"><a href="#PaymentGatewaysConfigurations" class="scroll-element">Payment Gateways Configurations</a></li>
+                    <li class="tab border_three transition"><a href="#Customization" class="scroll-element">Customization</a></li>
+                    <li class="tab border_three transition"><a href="#pwaInstallation" class="scroll-element">How to install PWA</a></li>
+                    <li class="tab border_three transition"><a href="#AddNewLanguage" class="scroll-element">How to add a new language</a></li>
+                    <li class="tab border_three transition"><a href="#Sources" class="scroll-element">Sources</a></li>
+                    <li class="tab border_three transition"><a href="#needCustomWork" class="scroll-element">Need Custom Work?</a></li>
+                    <li class="tab border_three transition"><a href="#ThankYou" class="scroll-element">Thank You</a></li>
+                </div> 
+                <!--/LIST CONTENT-->
+                <div class="column-title">Features</div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <ol>
+                    <li>
+                        Subscription system
+                    </li>
+                    <li>
+                        Users can set the weekly, monthly and yearly subscription price
+                    </li>
+                    <li>
+                        Implemented
+                        <strong>GDPR</strong>
+                    </li>
+                    <li>
+                        Banner Cookies Policy
+                    </li>
+                    <li>
+                        Notifications Real-time
+                    </li>
+                    <li>
+                        User can get Notifications comment, follow, subscribe, post buy, like, comment like, approve content by administrator.
+                    </li>
+                    <li>
+                        Account verification by uploading ID or Passport
+                    </li>
+                    <li>
+                        Edit your profile
+                    </li>
+                    <li>
+                        Verified users will display a badge
+                    </li>
+                    <li>
+                        Create unlimited posts for Free, Subscribers and Premium
+                    </li>
+                    <li>
+                        Point(credit) system.
+                    </li>
+                    <li>
+                        Creators can share posts, charging fees. People can see the post in return for the points the creator has set for the post.
+                    </li>
+                    <li>
+                        Members who want to pay to view the content can add points to the wallet.
+                    </li>
+                    <li>
+                        Users can manage posts
+                    </li>
+                    <li>
+                        Creators can manage their Dashboard(Normal users don't have Dashboar)
+                    </li>
+                    <li>
+                        SEO on Pages
+                    </li>
+                    <li>
+                        Upload Avatar
+                    </li>
+                    <li>
+                        Upload Cover
+                    </li>
+                    <li>
+                        Setting your Payout method (PayPal or Bank Transfer)
+                    </li>
+                    <li>
+                        Make withdrawals when you reach the minimum amount established by admin
+                    </li>
+                    <li>
+                        Search creators by Name/Username
+                    </li>
+                    <li>
+                        Integration with Stripe with (Recurrent)
+                    </li>
+                    <li>
+                        Integration PayPal Payment
+                    </li>
+                    <li>
+                        Integration BitPay Payment
+                    </li>
+                    <li>
+                        Integration RazorPay Payment
+                    </li>
+                    <li>
+                        Integration iyziCo Payment
+                    </li>
+                    <li>
+                        Integration Authorize.Net Payment
+                    </li>
+                    <li>
+                        Integration PayStack Payment
+                    </li>
+                    <li>
+                        Integration CoinPayment Payment
+                    </li>
+                    <li>
+                        Top 5 creators of last week!
+                    </li>
+                    <li>
+                        Explore Creators
+                    </li>
+                    <li>
+                        Social Login with Twitter and Google
+                    </li>
+                    <li>
+                        Email Verification
+                    </li>
+                    <li>
+                        Upload Photos and Images
+                    </li>
+                    <li>
+                        The system blur the photos and videos in premium and subscriber posts. This way, the member cannot see the real image of that post until they buy the post or subscribe to the profile.
+                    </li>
+                    <li>
+                        User can report post
+                    </li>
+                    <li>
+                        User can block post
+                    </li>
+                    <li>
+                        Enable/Disable Message
+                    </li>
+                    <li>
+                        Current point from dropdown menu
+                    </li>
+                    <li>
+                        Total earnings from Creator Dashboard
+                    </li>
+                    <li>
+                        Secure password hashing
+                    </li>
+                    <li>
+                        SMTP Support
+                    </li>
+                    <li>
+                        Easy translation
+                    </li>
+                    <li>
+                        Multilanguage
+                    </li>
+                    <li>
+                        Progress bar on Upload
+                    </li>
+                    <li>
+                        Message system users can send photos, videos, stickers and gifs
+                    </li>
+                    <li>
+                        Infinite scroll on Message system
+                    </li>
+                    <li>
+                        Infinite scroll on User Wall and Profile Wall
+                    </li>
+                    <li>
+                        History of payments made and received
+                    </li>
+                    <li>
+                        Email notifications
+                    </li>
+                    <li>
+                        Contact us page
+                    </li>
+                    <li>
+                        Change Password
+                    </li>
+                    <li>
+                        Saved Posts
+                    </li>
+                    <li>
+                        Stickers System in Comment and Message
+                    </li>
+                    <li>
+                        Gifs system in Comment and Message
+                    </li>
+                    <li>
+                        Emoticon system in Commend and Message
+                    </li>
+                    <li>
+                        Sponsored Advertisements
+                    </li>
+                    <li>
+                        Subscribers
+                    </li>
+                    <li>
+                        Subscriptions
+                    </li>
+                    <li>
+                        Payments
+                    </li>
+                    <li>
+                        Light / Dark Mode
+                    </li>
+                    <li>Tips System</li>
+                    <li>Live Streaming</li>
+                    <li>Live Streaming Gift System like TikTok</li>
+                    <li>Live Streaming Chat (RealTime)</li>
+                    <li>Create a paid live streaming</li>
+                    <li>Create a Free live Streaming</li>
+                    <li>OneSignal (RealTime Browser Notification system)</li>
+                    <li>Block Country</li>
+                    <li>Suggested Users between posts</li> 
+                    <li>Fake User Generator</li>
+                    <li>Earn Point system from comment, like post, like comment and creating a post.</li>
+                    <li>Enable/disable Earn Point system feature by feature</li>
+                    <li>Watermark URL on images</li>
+                    <li>Watermark logo on images</li> 
+                    <li>Product System</li>
+                    <li>Share audio(mp3)</li>
+                    <li>Earn money with point syste</li>
+                    <li>Send tip from message</li>
+                    <li>Send paid private message from message</li>
+                    <li>Video Call Pear to Pear</li> 
+
+                </ol>
+                </div>
+                <div class="column-title">Admin Features</div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <ul>
+                        <li>Settings</li>
+                        <li>
+                            <strong>Website Settings</strong>
+                        </li>
+                        <ul>
+                            <li>Site Logo</li>
+                            <li>Favicon</li>
+                            <li>Site Name</li>
+                            <li>Site Title</li>
+                            <li>Site Description</li>
+                            <li>Keywords</li>
+                        </ul>
+                        <li>
+                            <strong>General</strong>
+                        </li>
+                        <ul>
+                            <li>
+                                Main Language(Choose Language)
+                            </li>
+                            <li>
+                                Maintenance Mode(Enable/Disable)
+                            </li>
+                            <li>
+                                Email verification(Enable/Disable)
+                            </li>
+                            <li>
+                                Register (Enable/Disable)
+                            </li>
+                            <li>
+                                IP Limit(One ip can register 2 times if enabled)
+                            </li>
+                        </ul>
+                        <li>Limits</li>
+                        <ul>
+                            <li>Upload File Size limit</li>
+                            <li>Post Length</li>
+                            <li>Number of post show</li>
+                            <li>Show number of pagination</li>
+                            <li>Allowed file extensions(mp4,MP4,mp3,MP3,mpg,mov,m4v,avi,flv,mpeg,MPEG,webm,mkv,MKV,gif,GIF,jpg,jpeg,JPEG,JPG,PNG,png)</li>
+                            <li>File extensions valid for approval(gif,GIF,jpg,jpeg,JPEG,JPG,PNG,png)</li>
+                        </ul>
+                        <li>Billing Informations</li>
+                        <li>Email Settings</li>
+                        <li>Live Streaming Settings</li>
+                        <li>Storage</li>
+                        <ul>
+                            <li>S3 Storage Settings (Amazon)</li>
+                            <li>DigitalOcean Storage Settings</li>
+                        </ul>
+                        <li>Questions from Users (from contact page)</li>
+                        <li>Manage Posts</li>
+                        <ul>
+                            <li>Awaiting approval(Admin should approve Premium posts)</li>
+                            <li>Posts</li>
+                            <li>Premium Posts</li>
+                            <li>Subscribe Possts</li>
+                        </ul>
+                        <li>Reports</li>
+                        <ul>
+                             <li>Reported Posts</li>
+                             <li>Reported Comments</li>
+                        </ul>
+                        <li>Design</li>
+                        <ul>
+                            <li>Custom CSS/JS</li>
+                            <li>Manage SVG Icons</li>
+                            <li>Manage Landing Page</li>
+                            <li>Landing Page Question & Answer</li>
+                        </ul>
+                        <li>Manage Point Feature</li>
+                        <ul>
+                            <li>Point Packages Settings</li>
+                            <li>Live Streaming Gift Coin Settings</li>
+                        </ul>
+                        <li>Manage Languages</li>
+                        <li>Users</li>
+                        <ul>
+                            <li>Manage Users</li>
+                            <li>Creator Verification Requests</li>
+                        </ul>
+                        <li>Pages (Create/Edit/Delete) pages</li>
+                        <li>Stickers (Create/Edit/Delete) stickers</li>
+                        <li>Giphy API Settings</li>
+                        <li>Payment Methods</li>
+                        <ul>
+                            <li>Payment Settings</li>
+                            <li>PayPal</li>
+                            <li>Bitpay</li>
+                            <li>Stripe</li>
+                            <li>Authorize.Net</li>
+                            <li>IyziCo</li>
+                            <li>RazorPay</li>
+                            <li>PayStack</li>
+                            <li>CoinPayment</li>
+                        </ul>
+                        <li>Social Logins (Edit Twitter and Google Login)</li>
+                        <li>Manage Payments</li>
+                        <ul>
+                            <li>Manage Withdrawals</li>
+                            <li>Manage Subscription Payment</li>
+                        </ul>
+                        <li>Advertisement</li>
+                        <ul>
+                            <li>Create a Advertisement</li>
+                            <li>Manage Advertisements</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="Requirements">Requirements<a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <li><strong>PHP 7.1.0 or Greater</strong></li>
+                    <li><strong>MySQL 5.6</strong></li>
+                    <li>OpenSSL PHP Extension</li>
+                    <li>PDO PHP Extension</li>
+                    <li>Mbstring PHP Extension</li>
+                    <li>JSON PHP Extension</li>
+                    <li>cURL</li>
+                    <li>allow_url_fopen (php.ini) is ON</li>
+                    <li>Fileinfo PHP Extension</li>
+                    <li>FFMPEG</li>
+                </div>
+                <div class="column-title flex_ tabing_non_justify">Setting MySQL <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column" id="Settings">
+                    <div class="step_title">1-) Create a database</div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/mysql.png">
+                    </div>
+                    <div class="step_title">2-)New Database</div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/create_new_database.png">
+                    </div>
+                    <div class="step_title">3-)New Database User</div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/create_database_user.png">
+                    </div>
+                    <div class="step_title">3-)Manage User Priviliges</div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/manage_user_privileges.png">
+                    </div>
+                    <div class="step_title">4-)Import Database</div>
+                    <li>
+                        Log into your phpMyAdmin and import the <span>veebayy.sql</span> file located in the folder MySQL
+                    </li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/phpmyadmin.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/import.png">
+                    </div>
+                </div>
+                <div class="column-title flex_ tabing_non_justify">Uploading Files <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column" id="Uploading">
+                    <li>
+                        Upload all files inside the folder <span>"Script"</span> to the <span>"public_html"</span> or <span>"www"</span> folder on your server. You can compress the files or use FTP.
+                    </li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/file_upload.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/uploaded_files.png">
+                    </div>
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="Installation">Installation <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <li>
+                        Please open <span>connect.php</span> in <span>includes</span> folder
+                    </li>
+                    <li>Fill in the fields marked in red in the screenshot below. </li>
+                    <ul>
+                        <li><span>Please don't forget to add slash after your url like </span> </li>
+                        <ul>
+                            <li>true = <strong>http://www.yourwebsite.com/</strong></li>
+                            <li>false = <strong>http://www.yourwebsite.com</strong></li>
+                        </ul>
+                    </ul>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/connect.png">
+                    </div>
+                    <div class="column-title-in flex_" id="AccessAdmin">Credentials Admin Panel <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                    <li>
+                        After making the above changes in the <span>"connect.php"</span> file, you can log in to your website's administration panel using the following administrator information.
+                    </li>
+                    <li>Just enter from <span>"https://www.yousite.com/"</span> and enter the following credentials.</li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/admin.png">
+                    </div>
+                    <div class="column-title-in flex_">Dashboard <span class="right"></span> Settings <span class="right"></span>Website Settings </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/website_settings.png">
+                    </div>
+                    <div class="column-title-in flex_">Dashboard <span class="right"></span> Settings <span class="right"></span>General </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/general_settings.png">
+                    </div>
+                    <div class="column-title-in flex_">Dashboard <span class="right"></span> Settings <span class="right"></span>Limits </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/limits.png">
+                    </div>
+                    <div class="column-title-in flex_">Email Settings</div>
+                    <li><span>https://www.yourwebsite.com/admin/email_settings</span></li>
+                    <div class="column-title-in flex_">Storage Settings (s3)</div>
+                    <li> In this case You want to login and go here <a href="https://s3.console.aws.amazon.com/s3/home" target="blank_">https://s3.console.aws.amazon.com/s3/home</a></li>
+
+<li> Then click on create bucket <a href="https://prntscr.com/uxhjam" target="blank_">https://prntscr.com/uxhjam</a></li>
+
+<li> Give a bucket name <a href="https://prntscr.com/uxhji5" target="blank_">https://prntscr.com/uxhji5</a> and uncheck block all public access option Check “I acknowledge that the current settings might result in this bucket and the objects within becoming public.” & Click Create</li>
+
+<li> Click on the bucket name after that Go to Permissions => Access Control list => Everyone check all the options & click save <a href="https://prntscr.com/uxhjno" target="blank_">https://prntscr.com/uxhjno</a></li>
+
+<li> Now Click on Bucket policy tab and set this bucket policy</li>
+
+<pre>
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject" 
+            ],
+            "Resource": [
+                "arn:aws:s3:::YourBucketNameHere/*" 
+            ]
+        }
+    ]
+}
+</pre>
+Click Save.
+
+<li> Now that you must upload the ./uploads folder within the s3 bucket</li>
+
+<li> Once you are done uploading the uploads folder you must go My Security Credentials <a href="https://prntscr.com/uxhju1" target="blank_">https://prntscr.com/uxhju1</a> Grab them and set details here Admin Panel </li>
+</li>
+                    <li><span>https://www.yourwebsite.com/admin/storage_settings</span></li>
+                    <div class="column-title-in flex_">Storage Settings (DigitalOcean)</div>
+                    <li>Click <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-digitalocean-space-and-api-key">HERE</a> to get How To Create a DigitalOcean Space and API Key</li>
+                    <!--START-->
+                    <div class="column-title-in flex_">Storage Settings (Wasabi)</div>
+                    <li><strong>Step 1:</strong> Login to your Wasabi Account, select <strong>Buckets</strong> under Data Access menu panel and click <strong>Create Bukcet</strong></li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/create-bucket.png">
+                        </div>
+<li><strong>Step 2:</strong> Prorive a unique <strong>Bucket Name</strong> and select your <strong>Region</strong> and click <strong>Create Bucket</strong>. Make a note of both them, you will be including them into the script at the last step.</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/create-bucket-2.png">
+                        </div>
+
+<li><strong>Step 3:</strong> After the bucket is created, select your bucket from the list and under Actions tab, click on <strong>Settings</strong>.</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/create-bucket-3.png">
+                        </div>
+<li><strong>Step 4:</strong> In the Settings page, make sure you <strong>Enable Public Access</strong> for this bucket.</li>
+                       <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/create-bucket-4.png">
+                        </div>
+<li><strong>Step 5:</strong> Now when you are done creating and configuring your Wasabi Bucket, you will need to create <strong>Access Keys</strong> to be able to use your Wasabi Account.</li>
+                         
+
+<li><strong>Step 6:</strong> Go to Access Keys under Data Access menu panel and click on <strong>Create New Access Key</strong>.</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/access-key.png">
+                        </div>
+<li><strong>Step 7:</strong> Click <strong>Create</strong> button and download or copy your keys immediate as you get to see your <strong>Secret Access key</strong> only once.</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/access-key-2.png">
+                        </div>
+<li><strong>Step 6:</strong> Enter your <strong>Wasabi Access Keys</strong>, <strong>Wasabi Bucket</strong> and <strong>Wasabi Bucket Region</strong> in the Admin Panel of the script.</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/add-keys.png">
+                        </div>
+                    <!--FINISH-->
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="SocialLogin">Social Login Installation <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <div class="column-title-in flex_">Login With Google Installation</div>
+                    <ul>
+                        <li>Go to <a href="https://console.developers.google.com/apis/credentials">Google API Console</a> create OAuth client ID</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/create_app.png">
+                        </div>
+                        <li>Step 2: Google APIConsole create client ID OAuth Console here.</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/create_web.png">
+                        </div>
+                        <li>Step 3: Google APIConsole create client ID OAuth Console here.</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/create_ids.png">
+                        </div>
+                    </ul>
+                    <div class="column-title-in flex_ column">Create Twitter App</div>
+                    <div class="column-desc-in flex">To access Twitter API you need to create a Twitter App and specify the Consumer key & Consumer secret at the time of calling the Twitter API. If you haven’t already created a Twitter App, follow the below steps to <a href="http://www.codexworld.com/how-to-create-twitter-oauth-application/" target="blank_">create and configure a Twitter App</a> from the Application Management page.</div>
+                    <ul>
+                        <li>Go to the <a href="https://developer.twitter.com/apps" target="blank_">Twitter Developer account</a> and log in with your Twitter account.</li>
+                        <li>Click the Create an app button. Before creating a Twitter App you need to Apply for a Developer account. If you don’t have already a Twitter Developer account, provide the required details to apply. Once your developer account is approved by Twitter, create a New App.</li>
+                        <ul>
+                            <li><strong>Name:</strong> Your application Name. This is shown to the user in Twitter OAuth dialog.</li>
+                            <li><strong>Description:</strong> Your application Description. This is shown to the user while authorizing.</li>
+                            <li><strong>Website URL:</strong> Your web application URL.</li>
+                            <li><strong>Callback URL(*):</strong> After authorization, this URL is loaded with oauth_token.</li>
+                        </ul>
+                        <li>
+                            Change the apps permission to <strong>Read and Write or Read, Write and Access direct messages.</strong> For changing the apps permission, you need to add a mobile number to your twitter account.
+                        </li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/tkeys.png">
+                        </div>
+                        <div class="ste_image flex_ tabing border_one transition">
+                          <img src="assets/imgs/tpermissions.png">
+                        </div>
+                    </ul>
+                    <li><span>https://www.yourwebsite.com/admin/social_logins</span></li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/social_logins.png">
+                    </div>
+                    <li>Google Redirect URL: <span>https://www.yourwebsiteurl.com/googleLogin.php</span></li>
+                    <li>Twitter Redirect URL: <span>https://www.yourwebsiteurl.com/twitterLogin.php</span></li>
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="PaymentGatewaysConfigurations">Payment Gateways Configurations <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column"> 
+                    <div class="column-title-in flex_">PayPal</div>
+                    <li>Sign up for a PayPal account please visit the following link.</li>
+                    <ul>
+                        <li><a href="https://www.paypal.com">https://www.paypal.com</a> (for production)</li>
+                        <li><a href="https://developer.paypal.com/developer ">https://developer.paypal.com/developer</a> (for sandbox)</li>
+                    </ul>
+                    <li>After creating your account update PayPal Details from <span>https://www.yourwebsite.com/admin/paypal</span></li>
+
+                    <div class="column-title-in flex_">BitPay</div>
+                    <li>You can click the link below to create an account from BitPay.</li>
+                    <ul>
+                        <li><a href="https://test.bitpay.com/signup/">https://test.bitpay.com/signup/</a> (for test mode)</li>
+                        <li><a href=" https://bitpay.com/signup/"> https://bitpay.com/signup/</a> (for product mode)</li>
+                    </ul>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/bitpay.png">
+                    </div>
+                    <li>After getting your pair code and label update bitPay Details from <span>https://www.yourwebsite.com/admin/bitpay</span></li>
+                    <div class="column-title-in flex_">Stripe</div>
+                    <li>You can click the link below to create an account from Stripe.</li>
+                    <ul>
+                        <li><a href="https://www.stripe.com">https://www.stripe.com</a></li>
+                    </ul>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/stripe.png">
+                    </div>
+                    <li>After getting your Stripe <span>Publishable key</span> and <span>Secret key</span> then Update your Stripe Details from <span>https://www.yourwebsite.com/admin/stripe</span></li>
+                    <div class="column-title-in flex_">Authorize.Net</div>
+                    <li>You can click the link below to create an account from Stripe.</li>
+                    <ul>
+                        <li><a href="https://developer.authorize.net/hello_world/sandbox/">https://developer.authorize.net/hello_world/sandbox/</a> (for sendbox mode)</li>
+                        <li><a href="https://www.authorize.net/sign-up/">https://www.authorize.net/sign-up/</a> (for product mode)</li>
+                    </ul>
+                    <li>After getting your Authorize.Net <span>API login id</span> and <span>transaction key</span> then Update your Authorize.Net Details from <span>https://www.yourwebsite.com/admin/authorizenet</span></li>
+                    <div class="column-title-in flex_">IyziCo</div>
+                    <li>You can click the link below to create an account from IyziCo</li>
+                    <ul>
+                        <li><a href="https://sandbox-merchant.iyzipay.com/auth/login">https://sandbox-merchant.iyzipay.com/auth/login</a></li>
+                    </ul>
+                    <li>After getting your IyziCo <span>API Key</span> and <span>Secret Key</span> then Update your IyziCo Details from <span>https://www.yourwebsite.com/admin/iyzico</span></li>
+                    <div class="column-title-in flex_">RazorPay</div>
+                    <li>You can click the link below to create an account from RazorPay</li>
+                    <ul>
+                        <li><a href="https://dashboard.razorpay.com/#/access/signin">https://dashboard.razorpay.com/#/access/signin</a></li>
+                    </ul>
+                    <li>After getting your RazorPay <span>Key Id</span> and <span>Key Secret</span> then Update your RazorPay Details from <span>https://www.yourwebsite.com/admin/razorpay</span></li>
+                    <div class="column-title-in flex_">PayStack</div>
+                    <li>You can click the link below to create an account from PayStack</li>
+                    <ul>
+                        <li><a href="https://paystack.com">https://paystack.com</a></li>
+                    </ul>
+                    <li>After getting your PayStack <span>Public Key</span> and <span>Secret Key</span> then Update your PayStack Details from <span>https://www.yourwebsite.com/admin/paystack</span></li>
+                    <div class="column-title-in flex_">CoinPayment</div>
+                    <li>You can click the link below to create an account from CoinPayment</li>
+                    <ul>
+                        <li><a href="https://www.coinpayments.net/register">https://www.coinpayments.net/</a></li>
+                    </ul>
+                    <li>After getting your CoinPayment <span>Keys like as follow</span> then Update your CoinPayment Details from <span>https://www.yourwebsite.com/admin/coinpayment_settings</span></li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/cp1.png"> 
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition"> 
+                        <img src="assets/imgs/cp2.png"> 
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition"> 
+                        <img src="assets/imgs/cp3.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition"> 
+                        <img src="assets/imgs/cp4.png">
+                    </div>
+                    <div class="column-title-in flex_">Create Cron Job</div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/cr0.png"> 
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/cr1.png"> 
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/cr2.png"> 
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/cr3.png"> 
+                    </div>
+                    <pre>
+/usr/local/bin/ea-php74 /home/username/public_html/includes/renewWeeklySubscriptions.php                        
+                    </pre>
+                    <pre>
+/usr/local/bin/ea-php74 /home/username/public_html/includes/renewMonthlySubscriptions.php                        
+                    </pre>
+                    <pre>
+/usr/local/bin/ea-php74 /home/username/public_html/includes/renewYearlySubscriptions.php                        
+                    </pre>
+                    <pre>
+/usr/local/bin/ea-php74 /home/username/public_html/includes/calculateSubscriptionEarnings.php                        
+                    </pre>
+                    <ul>
+                        <li>
+                            In the image above change ea-php74 for your PHP version, username for yours, and put the path where your project is located, in my case it is in public_html.
+                        </li>
+                        <li>
+                            Click on Add New Cron Job and you're done!
+                        </li>
+                    </ul>
+                    <div class="column-title-in flex_">reCaptcha</div>
+                    <ul>
+                        <li>Open https://www.YOURWEBSITE.com/admin/limits</li>
+                        <div class="ste_image flex_ tabing border_one transition">
+                            <img src="assets/imgs/recaptcha.png">
+                        </div>
+                        <li>
+                            Get your API keys here <a href="https://www.google.com/recaptcha/admin/create/">Create a reCAPTCHA</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+<div class="column-title flex_ tabing_non_justify" id="oneSignalInstallation">OneSignal Installation <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column"> 
+                    <div class="column-title-in flex_">Please follow the following steps then make sure you clear cache before testing.</div>
+                    <ul> 
+                         <li>Register or Login OneSignal <a href="">https://onesignal.com</a></li> 
+                          <div class="ste_image flex_ tabing border_one transition">
+                            <img src="assets/imgs/onesignal1.png">
+                          </div> 
+                         <li>
+                            <div class="ste_image">Setup your web configuration</div>
+                            <ul>
+                                <li>Choose Integration</li>
+                                <li>Site Setup</li>
+                                <li>Click Save</li>
+                            </ul>
+                         </li> 
+                         <div class="ste_image flex_ tabing border_one transition">
+                            <img src="assets/imgs/onesignal2.png">
+                         </div>
+                         <li>
+                             <div class="ste_image">Click Settings</div>
+                             <ul>
+                                 <li>
+                                     After then click Web Push Platforms like as follows
+                                 </li>
+                             </ul>
+                         </li>
+                         <div class="ste_image flex_ tabing border_one transition">
+                            <img src="assets/imgs/onesignal3.png">
+                         </div> 
+                         <li>
+                             After clicking the Web Push Platforms you can see your Keys Just copy and paste your own keys in admin panel
+                         </li>
+                         <div class="ste_image flex_ tabing border_one transition">
+                            <img src="assets/imgs/onesignal4.png">
+                         </div>
+                         <li>
+                             <a href="#">https://www.YOURWEBSITEL.com/admin/limits</a>
+                         </li>
+                         <div class="ste_image flex_ tabing border_one transition">
+                            <img src="assets/imgs/onesignal5.png">
+                         </div>
+                    </ul>
+                     
+                   </div> 
+                <!---->
+                <div class="column-title flex_ tabing_non_justify" id="PaymentGatewaysConfigurations">Live Streaming Configuration(Agora.io) <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column"> 
+                    <div class="column-title-in flex_">Please follow the following steps then make sure you clear cache before testing.</div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/1.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/2.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/3.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/4.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/5.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/6.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/7.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/8.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/9.png">
+                    </div>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/10.png">
+                    </div>
+                   <div class="column-desc-in flex_">After creating a new project in your Agora dashboard panel, do not forget to do the above. If the first project you created does not work, create a second project and use the details of the second project you created. It will definitely work if you do everything right.</div>
+                   <div class="desc_veebayy_warning_support border_one">
+                   	if you want me to install agora. Please create a ticket on my support site. AGORA INSTALLATION PROCESS IS PAID. 
+                   </div>
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="pwaInstallation">PWA <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <div class="column-title-in flex_">How To Install PWA</div>
+                    <li>Open the manifest.json file in the src folder.</li>
+                    <li>Change the following sections in the manifest.json file you opened as you wish. </li>,
+                    <pre>
+"name": "veebayy - Support Content Creator Script",
+"short_name": "veebayy",
+"scope": "/",
+"start_url": "https://veebayy.veebayyscripts.com/",                        
+                    </pre>
+                    <li>Then replace the 192x192.png, 256x256.png, 384x384.png and 512x512.png image files in the src folder with your own image files. Please note that the replaced image files must be the same as the old image files. For example, the file name 192x192.png must be the same as your own image file name. </li>
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="Customization">Customization <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <div class="column-title-in flex_">How to add SVG Code</div>
+                    <li>Open SVG list page on your website <span>https://www.yourwebiste.com/admin/svgicons</span></li>
+                    <li>Hover over the icon you want to edit and click edit button.</li>
+                    <li>After click you can see the edit popup page. Just delete the old SVG codes and paste yours.</li>
+                    <div class="column-title-in flex_">How to Get SVG Code</div>
+                    <li>You can use <span>Adobe Illustrator</span> for it</li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/svg_code.gif">
+                    </div>
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="AddNewLanguage">How to Add New Language <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <li>
+                        Duplicate the folder langs / eng.php
+                    </li>
+                    <li>Rename to your language for example fr</li>
+                    <li>Translate the strings</li>
+                    <li>Open fr.php, eng.php go on line 873 and add your new language key.</li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/add_new_lang.png">
+                    </div>
+                    <li>Open add New language page from admin panel <span>https://www.yourwebsite.com/admin/</span></li>
+                    <div class="ste_image flex_ tabing border_one transition">
+                        <img src="assets/imgs/newlng.png">
+                    </div>
+                    
+                </div>
+                <div class="column-title flex_ tabing_non_justify" id="Sources">Sources <a href="#tableContent" class="flex_ tabing scroll-element" title="Go Top"><span class="up transition border_two"></span></a></div>
+                <div class="col-1 tabing__justify flex_ column">
+                    <li>jQuery - https://jquery.com/</li>
+                    <li>SVG Icons - https://www.flaticon.com</li>
+                    <li>jQuery Form // malsup.com/jquery/form/‎</li>
+                    <li>Fonts - https://www.google.com/fonts</li>
+                    <li>cKEditor - https://ckeditor.com</li>
+                    <li>chartJs - https://www.chartjs.org</li>
+                    <li>codeMirror - https://codemirror.net</li>
+                </div>
+               
+                </div>
+            <!--/DOCUMENTATION-->
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/prism-line-highlight.js"></script>
+    <script type="text/javascript">
+        function scrollElement(element) {
+            var offset = $(element).offset().top;
+            $('html, body').animate({
+                scrollTop: offset
+            }, 500);
+        };
+
+        $('.scroll-element').click(function(e) {
+            e.preventDefault();
+            $this = $(this);
+            $value = $this.attr('href');
+            scrollElement($value);
+        });
+    </script>
+</body>
+
+</html>
